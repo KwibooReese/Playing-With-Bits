@@ -14,6 +14,6 @@ def speak(string):
             print(string)
 
 def user_has_permissions(permission_to_look_for):
-     return (user_permissions | permission_to_look_for) == 1
+     return (user_permissions & permission_to_look_for) == 1
 
 speak("hello")
